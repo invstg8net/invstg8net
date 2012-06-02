@@ -1,9 +1,4 @@
 class QuestionsController < ApplicationController
-
-  def index
-    @questions = Questions.all#TODO - determine what to show
-  end
-
   def new
     @question = Question.new
   end

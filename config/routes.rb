@@ -1,5 +1,7 @@
 InvestigateNet::Application.routes.draw do
-  resources :questions, :only => [:new, :post, :index]
+  devise_for :admins
+
+  resources :questions, :only => [:new, :post]
   resources :answers, :only => [:show, :update]
   resources :researchers, :only => [:new, :create]
 

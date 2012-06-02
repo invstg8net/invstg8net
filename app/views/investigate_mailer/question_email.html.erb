@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    -------------------Please Post Reply Above This Line-------------------
+    --------------------------<%= @answer.id %>-------------------------------
+    <h1><%=@researcher.name%>, please answer this question by pasting the reply above</h1>
+    <p>
+      <%= @question.body %>
+    </p>
+    <br/>
+    <h4>If you can't answer this question, please click <%= link_to 'HERE', answers_url(@answer, :method => :put) %></h4>
+  </body>
+</html>
