@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<script>
+
+	</script>
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns">
+			<form action="" onsubmit="">
+				<section>
+					<h4>Is this request sensitive?<span class="import-stuff">*</span></h4>
+					<p>
+						YES or NO
+					</p>
+					<div>
+						<input type="radio"
+							   name="sensitive" 
+							   value"1"/> 
+						<label>Yes</label>
+					</div>
+					<div>
+						<input type="radio" 
+							   name="sensitive"
+							   value"0"/> 	   
+							  
+						<label>No</label>
+					</div>
+					
+				</section><!-- -->
+				<section id="risk-level">
+				<hr class=""/>
+				<h4>Risk Level<span class="import-stuff">*</span></h4><p>
+				If you answered YES above, list severity of the personal risk to you.
+				</p> 
+				<div>
+				<label>1. Life</label>		
+				<input type="radio" 
+				   name="risk_level"
+				   value"1"/>
+				</div>  	
+				<div>
+				<label>2. Safety</label>   
+				   <input type="radio" 
+				   name="risk_level"
+				   value"2"/>
+				</div>
+				<div>
+				<label>3. Duress</label>		
+				<input type="radio" 
+				   name="risk_level"
+				   value"3"/>
+				</div>  	
+				<div>
+				<label>4. Unknown</label>   
+				   <input type="radio" 
+				   name="risk_level"
+				   value"4"/>
+				</div>
+				<div>
+				<label>5. Unknown</label>   
+				   <input type="radio" 
+				   name="risk_level"
+				   value"5"/><br />
+				   <input type="type"
+				   		  name="other-risk">
+				</div>
+				</section>
+				<section>
+				<hr class=""/>
+				<h4>Urgency</h4>
+				<p>
+				How soon do you need this information? 
+				</p>
+				<div>
+				<label>1. Extreme <6hours</label>		
+				<input type="radio" 
+				   name="urgency_level"
+				   value"1"/>
+				</div>  	
+				<div>
+				<label>2. High <24 days</label>   
+				   <input type="radio" 
+				   name="urgency_level"
+				   value"2"/>
+				</div>
+				<div>
+				<label>3. Moderate <3 days</label>		
+				<input type="radio" 
+				   name="risk_level"
+				   value"3"/>
+				</div>  	
+				<div>
+				<label>4. Low <1 week</label>   
+				   <input type="radio" 
+				   name="urgency_level"
+				   value"4"/>
+				</div>
+
+				<div>
+				<label>5. ASAP</label>		
+				<input type="radio" 
+				   name="urgency_level"
+				   value"4"/>
+				</div>  	
+				</section>
+
+				<section>
+				<hr class=""/>
+				<h4>Region <span class="import-stuff">*</span></h4>
+				Which region is this request about?  
+				<div>?
+				<label>1. Africa </label>		
+				<input type="radio" 
+				   name="region"
+				   value"1"/>
+				</div>  	
+				<div>
+				<label>2. Asia </label>   
+				   <input type="radio" 
+				   name="region"
+				   value"2"/>
+				</div>
+				<div>
+				<label>South America</label>		
+				<input type="radio" 
+				   name="region"
+				   value"3"/>
+				</div>  	
+				<div>
+				<label>Australasia</label>   
+				   <input type="radio" 
+				   name="region"
+				   value"4"/>
+				</div>
+
+				<div>
+				<label>Europe</label>		
+				<input type="radio" 
+				   name="region"
+				   value"5"/>
+				</div>
+				<div>
+				<label>Arctic</label>		
+				<input type="radio" 
+				   name="region"
+				   value"6"/>
+				</div>  	
+				<div>
+				<label>Antaratica</label>		
+				<input type="radio" 
+				   name="region"
+				   value"7"/>
+				</div>  
+					
+				</section>
+				<section>
+					<h4>Enter your request <span class="import-stuff">*</span></h4>
+					<textarea id="request" name="request-text">
+
+					</textarea>
+				</section>
+				<input value="Submit" type="submit"/>
+			</form> 
+
+		</div>
+		
+
+	</div><!-- container -->
+
+
+
+	<!-- JS
+	================================================== -->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="javascripts/tabs.js"></script>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
