@@ -47,7 +47,10 @@
 
 	<div class="container">
 		<div class="sixteen columns">
-			<form action="" onsubmit="">
+		<h1>Investig8.net Request</h1>
+			<form method="post"
+				  id="request-form">
+
 				<section>
 					<h4>Is this request sensitive?<span class="import-stuff">*</span></h4>
 					<p>
@@ -148,8 +151,8 @@
 				<section>
 				<hr class=""/>
 				<h4>Region <span class="import-stuff">*</span></h4>
-				Which region is this request about?  
-				<div>?
+				<p>Which region is this request about?</p>  
+				<div>
 				<label>1. Africa </label>		
 				<input type="radio" 
 				   name="region"
@@ -192,14 +195,15 @@
 				   name="region"
 				   value"7"/>
 				</div>  
-					
 				</section>
+				<hr class=""/>
 				<section>
 					<h4>Enter your request <span class="import-stuff">*</span></h4>
-					<textarea id="request" name="request-text">
+					<textarea id="request" name="request-text" class="sixteen columns">
 
 					</textarea>
 				</section>
+				<hr class=""/>
 				<input value="Submit" type="submit"/>
 			</form> 
 
@@ -213,6 +217,9 @@
 	<!-- JS
 	================================================== -->
 	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js">
+	</script>
+	
 	<script src="javascripts/tabs.js"></script>
 
 <!-- End Document
