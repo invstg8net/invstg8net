@@ -1,6 +1,7 @@
 InvestigateNet::Application.routes.draw do
-
   resources :questions, :only => [:new, :post, :index]
+  resources :answers, :only => [:show, :update]
+  resources :researchers, :only => [:new, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

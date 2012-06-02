@@ -3,7 +3,7 @@ class CreateAnswersTable < ActiveRecord::Migration
     create_table :answers do |t|
       t.integer :question_id
       t.boolean :answered, :default => false
-      t.text :answer
+      t.text :body
       t.integer :researcher_id
       t.timestamps
     end

@@ -18,7 +18,11 @@ class QuestionsController < ApplicationController
     q.save
 
     #Choose X Random Researchers
+    researchers = Researcher.select_researchers_for_question(q)
 
     #Email Random Researchers & Create Questions
+    researchers.each do |r|
+      q.send_to_researcher(r)
+    end
   end
 end
