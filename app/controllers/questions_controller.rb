@@ -6,10 +6,8 @@ class QuestionsController < ApplicationController
   def create
 
     #Create the question
-    q = Question.new :body => params[:body],
-      :phone_number => params[:phone_number],
-      :email => params[:email],
-      :needed_by => (params[:needed_by] || (Time.now + 5.days))    
+    q = Question.new params[:question]
+    q.needed_by ||= Time.now + 5.days
     q.save
 
     #Choose X Random Researchers
@@ -19,5 +17,7 @@ class QuestionsController < ApplicationController
     researchers.each do |r|
       q.send_to_researcher(r)
     end
+
+    render :thank_you
   end
 end
