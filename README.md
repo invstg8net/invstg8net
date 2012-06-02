@@ -14,5 +14,6 @@ Participants
     Peter                                  Asp.net and Java Devel
     Josh                                   Ruby on Rails, Javascript devel
     Mike Kallies  mike.kallies@gmail.com   Programmer and Infrastructure stuff
+    Kevin Kelly							   Interface Developer
 
 
