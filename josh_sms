@@ -1,0 +1,12 @@
+
+{
+"outboundSMSMessageRequest":
+{
+"address": ["tel:+16474058994"],
+"clientCorrelator": "10002",
+"outboundSMSTextMessage": { "message": "Test sending SMS 
+from Nick" },
+"senderAddress": "tel:7511",
+"senderName": "Nick Test"– 5 –
+}
+}
