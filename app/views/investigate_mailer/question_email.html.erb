@@ -5,7 +5,7 @@
   </head>
   <body>
     --------------------Please Post Reply Above This Line-------------------
-    <h1><%=@researcher.name%>, please answer this question by pasting the reply above</h1>
+    <h1><%=@researcher.try(:name) %>, please answer this question by pasting the reply above</h1>
     <p>
       <%= @question.body %>
     </p>

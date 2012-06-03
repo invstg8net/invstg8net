@@ -8,7 +8,8 @@ InvestigateNet::Application.routes.draw do
   resources :researchers, :only => [:new, :create]
 
   namespace :admin do
-    resources :questions, :only => [:index]
+    resources :questions, :only => [:index, :show]
+    resources :answers, :only => [:create]
     resources :researchers, :only => [:index] do
       get :activate, :on => :member
       get :deactivate, :on => :member
