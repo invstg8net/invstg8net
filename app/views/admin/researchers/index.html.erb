@@ -1,0 +1,36 @@
+<header>
+  <h1></h1>
+</header>
+<div class="container">
+  <table class="table">
+    <thead>
+    <th>id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Land Phone</th>
+    <th>Mobile Phone</th>
+    <th>Join Date</th>
+    <th>Approv.</th>
+    <th></th>
+    </thead>
+    <!-- Username Point -->
+    <% @researchers.each do |r| %>
+      <tr class="approved" id="q1">
+        <td><%= r.id %></td>
+        <td><%= r.name %></td>
+        <td><%= r.email %></td>
+        <td><%= r.phone_number %></td>
+        <td><%= r.mobile_number %></td>
+        <td><%= r.created_at.strftime('%c') %></td>
+        <td>
+          <% if r.activated? %>
+            <%= link_to 'Deactivate', [:deactivate, :admin, r] %>
+          <% else %>
+            <%= link_to 'Activate', [:activate, :admin, r] %>
+          <% end %>
+
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div><!--container-->

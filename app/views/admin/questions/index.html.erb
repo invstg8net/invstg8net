@@ -1,0 +1,32 @@
+<div class="container">
+  <table class="table">
+    <thead>
+    <th>ID</th>
+    <th>Question</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Date</th>
+    <th>Needed By</th>
+    <th>Researchers Queried</th>
+    <th>Successful Replies</th>
+    <th>Unsuccessful Replies</th>
+    <th></th>
+    </thead>
+    <% @questions.each do |q| %>
+      <tr class="question">
+        <td><%= q.id %></td>
+        <td><%= q.body %></td>
+        <td><%= q.email %></td>
+        <td><%= q.phone_number %></td>
+        <td><%= q.created_at.strftime('%c') %></td>
+        <td><%= q.needed_by.strftime('%c') %></td>
+        <td><%= q.answers.count %></td>
+        <td><%= q.answers.where(:answered => true).where('body IS NOT NULL').count %></td>
+        <td><%= q.answers.where(:answered => true).where('body IS NULL').count %></td>
+        <td><%= link_to 'View Answers', [:admin, q] %> </td>
+      </tr>
+    <% end %>
+  </table>
+  <div>
+  </div><!--container-->
+</div>

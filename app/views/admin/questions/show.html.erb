@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>Q: <%= @question.body %> </h1>
+  <table class="table">
+    <thead>
+    <th>ID</th>
+    <th>State</th>
+    <th>Answer</th>
+    <th>Request Date</th>
+    <th>Researcher Name</th>
+    <th>Researcher Email</th>
+    <th>Researcher Mobile</th>
+    <th>Researcher Phone Number</th>
+    </thead>
+    <% @question.answers.each do |a| %>
+      <tr class="answer">
+        <td><%= a.id %></td>
+        <td><%= a.answered ? (a.body.nil? ? 'Unsucessful' : 'Sent') : 'Waiting'  %></td>
+        <td><%= a.body %></td>
+        <td><%= a.created_at.strftime('%c') %></td>
+        <td><%= a.researcher.try(:name) %></td>
+        <td><%= a.researcher.try(:email) %></td>
+        <td><%= a.researcher.try(:mobile_number) %></td>
+        <td><%= a.researcher.try(:phone_number) %></td>
+      </tr>
+    <% end %>
+  </table>
+
+
+  <h2>Submit Your Own Answer</h2>
+  <%= form_tag [:admin, :answers] %>
+
+  <section>
+    <div>
+      <label>Answer<span class="import-stuff">*</span></label>
+      <%= hidden_field_tag :question_id, @question.id %>
+      <%= text_area_tag :body %>
+    </div>
+  </section><!-- -->
+  <hr class=""/>
+  <%= submit_tag %>
+
+<div>
+</div><!--container-->
+</div>

@@ -31,6 +31,9 @@ group :development do
   gem 'mail_view'
 end
 
+gem "twitter-bootstrap-rails"
+gem "twilio-ruby"
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
