@@ -40,3 +40,8 @@ test:
   username: postgres
   password:
   host: localhost
+
+production:
+  adapter: sqlite3
+  encoding: unicode
+  database: db/production.db
