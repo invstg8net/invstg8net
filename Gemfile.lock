@@ -30,6 +30,11 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.7)
     arel (3.0.2)
+    aws-ses (0.4.4)
+      builder
+      mail (> 2.2.5)
+      mime-types
+      xml-simple
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     coffee-rails (3.2.2)
@@ -136,11 +141,13 @@ GEM
       multi_json (>= 1.0.2)
     warden (1.1.1)
       rack (>= 1.0)
+    xml-simple (1.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-ses
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails

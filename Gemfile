@@ -33,6 +33,7 @@ end
 
 gem "twitter-bootstrap-rails"
 gem "twilio-ruby"
+gem  'aws-ses'
 
 
 # To use ActiveModel has_secure_password
