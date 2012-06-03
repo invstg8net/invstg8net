@@ -2,8 +2,18 @@ InvestigateNet::Application.routes.draw do
   devise_for :admins
 
   resources :questions, :only => [:new, :create]
-  resources :answers, :only => [:show, :edit, :update]
+  resources :answers, :only => [:show, :edit, :update] do
+    get :no_answer, :on => :member
+  end
   resources :researchers, :only => [:new, :create]
+
+  namespace :admin do
+    resources :questions, :only => [:index]
+    resources :researchers, :only => [:index] do
+      get :activate, :on => :member
+      get :deactivate, :on => :member
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
