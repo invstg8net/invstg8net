@@ -14,7 +14,7 @@ class InvestigateMailer < ActionMailer::Base
     @question = answer.question
     @researcher = @answer.researcher
 
-    mail(:to => @question.email, :subject => "#{@researcher.name} replied to your question", :from => 'answer@invstg8.net')
+    mail(:to => @question.email, :subject => "#{@researcher.try(:name)} replied to your question", :from => 'answer@invstg8.net')
   end
 
   def escalate_email(question)
