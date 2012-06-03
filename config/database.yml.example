@@ -13,13 +13,9 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
-  database: investigate_net_development
-  pool: 5
-  username: postgres
-  password:
-  host: localhost
+  database: db/dev.db
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
 
@@ -40,3 +36,8 @@ test:
   username: postgres
   password:
   host: localhost
+
+production:
+  adapter: sqlite3
+  encoding: unicode
+  database: db/dev.db
