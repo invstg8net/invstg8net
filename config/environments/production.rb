@@ -67,4 +67,9 @@ InvestigateNet::Application.configure do
 
   DOMAIN = "www.equibbly.com" # For now, while on heroku, for staging.
   config.action_mailer.default_url_options = { :host => DOMAIN }
+  config.action_mailer.smtp_settings = {
+  :authentication => :login,
+  :user_name => 'mgjkrhok',
+  :password => 'babi-sKt'
+}
 end
