@@ -14,14 +14,24 @@ class AnswersController < ApplicationController
     @answer.save
 
     if @answer.body.nil?
-      #Check to see if admin should be notified
+      #Check to see if admin should be notified if all answers
       puts "ESCALATE"
-      @answer.question.escalate_to_admin if @answer.question.answers.where(:answered => false).count == 0
+      @answer.question.escalate_to_admin if @answer.question.should_escalate?
     else
       puts "SEND TO JORUNALIST"
       #Email/SMS user who submitted the question
       @answer.send_to_journalist
     end
+
+    render :thank_you
+  end
+
+  def no_answer
+    @answer = Answer.find params[:id]
+    @answer.answered = true
+    @answer.save
+    
+    @answer.question.escalate_to_admin if @answer.question.should_escalate?
 
     render :thank_you
   end
