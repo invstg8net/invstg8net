@@ -28,10 +28,6 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 		<style>
 
 		@import url("stylesheets/bootstrap.css");
@@ -39,59 +35,32 @@
 
 	
 	</style>
-</head>
-<body>
-	<body><!-- -->
 
 	<script src="bootstrap.js"> 
 		
 	</script>
-	<header>
-		<h1></h1>
-	</header>
+</head>
+<body>
+
 		<div class="container">
+		<header></header>
 		<table class="table">
 		<thead>
-			<th></th><th>Question/Answer</th><th>Author</th><th>Date</th><th>Ans.</th>
+			<th>ID</th><th>Question</th><th>Email</th><th>Phone</th><th>Date</th><th>Needed By</th><th>Researchers Responded</th><th>Researchers Commented</th>
 		</thead>
-			<!-- Question Point -->
 			<tr class="question" id="q1">
-				<td>1</td><td>How will things do other things?</td><td>Masked Rider</td><td>20-March-12 12:20</td><td><a class="show-answer" id="" href="">show</a></td>
+				<td>1</td><td>How will things do other things?</td><td>that.guy@gmail.com</td><td>XXX-XXX-XXXX<td>20-March-12 12:20</td><td>20-March-12 12:20</td><td>20</td><td>10</td>
 			</tr>
-			<!-- Answer Point -->
-			<tr class="answer q1">
-			<!-- Add the question in the class, also. -->
-				<td></td><td>How will things do other things?</td><td>Magna Defender</td><td>20-March-12 12:20</td><td><a href=""></a></td>
-			</tr>
+			>
 		</table>
 		<div>
 		</div><!--container-->
 		<!-- JS ================================================== -->
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-		<script>
-			$(document).ready(function()
-			{
-				$(".question .show-answer").click(function()
-				
-					//this.parent.hide();
-				});
-			}); 
-		</script>
+		
 		<script src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js">
 		</script>
-		<script>
-			$(document).ready(function()
-			{
-				
-				$(".show-answer").click(function()
-				{
-					// get the id
-					var = $(this).attr(); 
-
-				});
-
-			});
-		</script>
+		
 		<script src="javascripts/tabs.js"></script>
 
 
