@@ -8,7 +8,7 @@ class ResearchersController < ApplicationController
     researcher.activated = false
 
     if researcher.save
-      #TODO - Display Thank You
+      render :thank_you
     else
       render :new
     end

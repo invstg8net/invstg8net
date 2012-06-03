@@ -40,4 +40,4 @@ test:
 production:
   adapter: sqlite3
   encoding: unicode
-  database: db/dev.db
+  database: db/production.db

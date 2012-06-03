@@ -1,6 +1,12 @@
 <div class="container">
   <div class="sixteen columns">
     <%= form_for @question do |f| %>
+
+      <section>
+        <h4>Email</h4>
+        <%= f.text_field :email %>
+      </section>
+
       <!--section>
         <h4>Is this request sensitive?<span class="import-stuff">*</span></h4>
         <p>
@@ -60,7 +66,6 @@
         </div>
       </section-->
       <section>
-        <hr class=""/>
         <h4>Urgency</h4>
         <p>
           How soon do you need this information?
