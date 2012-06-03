@@ -26,6 +26,12 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form', '~> 2.0.1'
 
+group :development do
+  gem 'letter_opener'
+  gem 'mail_view'
+end
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

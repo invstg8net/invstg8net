@@ -4,13 +4,13 @@ class Question < ActiveRecord::Base
   def escalate_to_admin
     self.update_attributes(:escalated => true)
 
-    InvestigateMailer.escalate_email(self)
+    InvestigateMailer.escalate_email(self).deliver
   end
 
   def send_to_researcher(researcher)
-    a = Answer.new :researcher_id => researcher, :question_id => self
+    a = Answer.new :researcher => researcher, :question => self
 
-    InvestigateMailer.question_email(a) if a.save
+    InvestigateMailer.question_email(a).deliver if a.save
   end
 
 end
