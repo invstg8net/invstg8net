@@ -4,12 +4,12 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    -------------------Please Post Reply Above This Line-------------------
+    --------------------Please Post Reply Above This Line-------------------
     <h1><%=@researcher.name%>, please answer this question by pasting the reply above</h1>
     <p>
       <%= @question.body %>
     </p>
     <br/>
-    <h4>If you can't answer this question, please click <%= link_to 'HERE', answer_url(@answer, :method => :put) %></h4>
+    <h4>If you can't answer this question, please click <%= link_to 'HERE', no_answer_answer_url(@answer) %></h4>
   </body>
 </html>

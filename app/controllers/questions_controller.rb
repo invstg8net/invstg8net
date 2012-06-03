@@ -4,9 +4,10 @@ class QuestionsController < ApplicationController
   end
 
   def create
+    q_params = params[:question] || params
 
     #Create the question
-    q = Question.new params[:question]
+    q = Question.new :body => q_params[:body], :phone_number => q_params[:phone_number], :email => q_params[:email], :needed_by => q_params[:needed_by]
     q.needed_by ||= Time.now + 5.days
     q.save
 
