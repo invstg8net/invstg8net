@@ -65,6 +65,6 @@ InvestigateNet::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  DOMAIN = "www.invst8.net" # For now, while on heroku, for staging.
+  DOMAIN = "www.equibbly.com" # For now, while on heroku, for staging.
   config.action_mailer.default_url_options = { :host => DOMAIN }
 end
