@@ -7,8 +7,7 @@ class Admin::AnswersController < Admin::BaseController
     a.answered = true
     a.save
 
-    if a.body.nil?
-    else
+    if !a.body.nil?
       #Email/SMS user who submitted the question
       a.send_to_journalist
     end
