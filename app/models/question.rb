@@ -13,4 +13,13 @@ class Question < ActiveRecord::Base
     InvestigateMailer.question_email(a).deliver if a.save
   end
 
+  def should_escalate?
+    #All users have answered and all answers were empty
+    if answers.where(:answered => true).where('body IS NOT NULL').count == 0
+      return true if self.answers.where(:answered => false).count == 0
+      return true if Time.now > self.needed_by
+    end
+    return false
+  end
+
 end
