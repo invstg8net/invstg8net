@@ -2,7 +2,7 @@ InvestigateNet::Application.routes.draw do
   devise_for :admins
 
   resources :questions, :only => [:new, :create]
-  resources :answers, :only => [:show, :update]
+  resources :answers, :only => [:show, :edit, :update]
   resources :researchers, :only => [:new, :create]
 
   # The priority is based upon order of creation:

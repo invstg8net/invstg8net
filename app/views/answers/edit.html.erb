@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="sixteen columns">
+    <h1>Investig8.net Answer</h1>
+    <%= form_tag @answer, :method => :put %>
+
+      <section>
+        <div>
+          <label>Answer<span class="import-stuff">*</span></label>
+          <%= text_area_tag :body %>
+        </div>
+      </section><!-- -->
+      <hr class=""/>
+      <%= submit_tag %>
+
+    </div>
+
+
+  </div><!-- container -->
