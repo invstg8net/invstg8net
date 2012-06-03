@@ -27,7 +27,7 @@ input[type="radio"]
 }
 hr 
 {
-	visibility; hidden; 
+	visibility: hidden;
 	clear: both;
 }
 

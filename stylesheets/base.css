@@ -272,7 +272,8 @@
 	  overflow: hidden;
 	  visibility: hidden;
 	  width: 0;
-	  height: 0; }
+	  height: 0;
+        }
 	ul.tabs:after {
 	  clear: both; }
 	ul.tabs {
