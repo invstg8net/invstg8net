@@ -8,7 +8,7 @@ class Answer < ActiveRecord::Base
     if self.question.email.blank?
       puts "SMS"
       #No Email, so SMS the answer if short enough, or send URL
-      sms_body = self.body.length > 140 ? "Checkout your invst8.net response @ #{answer_url(self)}" : "Your invst8.net response: #{self.body}" #TODO - see if this url works
+      sms_body = self.body.length > 140 ? "Checkout your invst8.net response @ #{answer_url(self, :host => 'localhost:3002')}" : "Your invst8.net response: #{self.body}" #TODO - see if this url works
 
       #TODO - Send SMS
       puts self.question.inspect

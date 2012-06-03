@@ -1,4 +1,4 @@
-<h1><%= @answer.researcher.name %> replied to your question</h1>
+<h1><%= @answer.researcher.try(:name) %> replied to your question</h1>
 <h3>Question:</h3>
 <p>
   <%= @answer.question.body %>
