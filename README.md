@@ -1,28 +1,30 @@
 invstg8net
 ==========
 
-Microcollaboration tool for journalists
-RHoK 2012
+Microcollaboration tool for journalists with limited to no Internet access. Close the gap.
+RHoK June 1-3, 2012, Toronto
 
 
-Participants
-============
+Leader
+======
+    Saleem Khan     saleem.khan@invstg8.net  @saleemkhan  Project Lead, journalist
 
-<<<<<<< HEAD
-    Saleem Khan saleem.khan@invstg8.net    Project Lead
-    Josh Borts                             Ruby on Rails, Javascript devel
-    Said Henry                             Media sales and marketing specialist
-=======
-    Saleem                                 Project Lead
-    Richard                                Storyteller and presenter
-    Said                                   Media Journalism and Marketing Specialist
-    Peter                                  Asp.net and Java Devel
-    Josh                                   Ruby on Rails, Javascript devel
->>>>>>> Questions Page
-    Mike Kallies  mike.kallies@gmail.com   Programmer and Infrastructure stuff (test)
-    Kevin Kelly							   Interface Developer
-    Peter Newhook                          Asp.net and Java Devel
-    Richard Pietro                         Storyteller and presenter
+Code team
+=========
+    Josh Borts      @joshborts                            Ruby on Rails, Javascript developer
+    Mike Kallies    mike.kallies@gmail.com                Programmer and Infrastructure stuff (test)
+    Kevin Kelly         				                  Interface Developer
+    Peter Newhook   @p3373r                               Asp.net and Java Developer
+
+Additional support
+==================
+    Said Henry                                            Media sales and marketing specialist
+    Richard Pietro                                        Storyteller and presenter
+    
+Major props
+===========
+    John Van Alten                                        Early project advisor, developer
+    Heather Leson                                         Project support, idea hacker, community builder, crisis mapper
 
 
 
