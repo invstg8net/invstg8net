@@ -9,8 +9,8 @@ Leader
 ======
     Saleem Khan     saleem.khan@invstg8.net  @saleemkhan  Project Lead, journalist
 
-Code team
-=========
+RHoK code team
+==============
     Josh Borts      @joshborts                            Ruby on Rails, Javascript developer
     Mike Kallies    mike.kallies@gmail.com                Programmer and Infrastructure stuff (test)
     Kevin Kelly         				                  Interface Developer
