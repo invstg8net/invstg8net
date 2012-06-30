@@ -16,10 +16,6 @@ RHoK code team
     Kevin Kelly         				                  Interface Developer
     Peter Newhook   @p3373r                               Asp.net and Java Developer
 
-Additional support
-==================
-    Said Henry                                            Media sales and marketing specialist
-    Richard Pietro                                        Storyteller and presenter
     
 Major props
 ===========
