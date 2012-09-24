@@ -14,4 +14,4 @@ class Admin::AnswersController < Admin::BaseController
 
     redirect_to [:admin, a.question]
   end
-end
+end 
