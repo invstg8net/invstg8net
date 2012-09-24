@@ -6,7 +6,7 @@ class InvestigateMailer < ActionMailer::Base
     @question = answer.question
     @researcher = answer.researcher
 
-    mail(:to => @researcher.email, :subject => "New question from InvestigateNet", :from => "question+#{@answer.id}@invstg8.net")
+    mail(:to => @researcher.email, :subject => "New question from INVSTG8.NET", :from => "question+#{@answer.id}@invstg8.net")
   end
 
   def answer_email(answer)
