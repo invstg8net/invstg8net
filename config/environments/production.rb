@@ -75,7 +75,7 @@ InvestigateNet::Application.configure do
     :port => 587,
     :domain => 'smtp.gmail.com',
     :user_name => 'admin@invstg8.net',
-    :password => 'swkadmin01',
+    :password => 'xxxyyyyyzz',
     :authentication => 'plain',
     :enable_starttls_auto => true
   }
