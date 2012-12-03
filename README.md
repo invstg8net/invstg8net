@@ -9,7 +9,7 @@ Leader
 ======
     Saleem Khan     saleem.khan@invstg8.net  @saleemkhan  Project Lead, journalist
 
-RHoK code team
+RHoK June 2012 code team
 ==============
     Josh Borts      @joshborts                            Ruby on Rails, Javascript developer
     Mike Kallies    mike.kallies@gmail.com                Programmer and Infrastructure stuff (test)
@@ -26,7 +26,7 @@ RHoK December 2012 code team
 Major props
 ===========
     John Van Alten                                        Early project advisor, developer
-    Heather Leson                                         Project support, idea hacker, community builder, crisis mapper
+    Heather Leson                                         Advisor, project support, idea hacker, community builder, crisis mapper
 
 
 
