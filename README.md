@@ -15,6 +15,12 @@ RHoK code team
     Mike Kallies    mike.kallies@gmail.com                Programmer and Infrastructure stuff (test)
     Kevin Kelly         				                  Interface Developer
     Peter Newhook   @p3373r                               Asp.net and Java Developer
+    
+    
+RHoK December 2012 code team
+============================
+    Scott Rostrup                                         
+    Alex Lee        @driftrobot   
 
     
 Major props
